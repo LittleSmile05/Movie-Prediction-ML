@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url(https://www.itl.cat/pngfile/big/192-1926794_iphone-8-plus-marvel-case.jpg);
+            background-size:100% 100vh;
+            background-repeat: no-repeat;
+        }
+        .mb-3 input{
+            width: 450px;
+        }
+        .mb-4 span{
+            color: rgb(203, 19, 19);
+        }
+        .btn-primary {
+            background-color: rgb(203, 19, 19);
+            border-color: red;
+        }
+
+        .btn-primary:hover {
+            background-color: darkred;
+            border-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Movie Recommendation <span>System</span></h1>
+        <form action="/recommend" method="POST">
+            <div class="mb-3">
+                <label for="movie_name" class="form-label">Enter your favorite movie name:</label>
+                <input type="text" class="form-control" id="movie_name" name="movie_name" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Recommendations</button>
+        </form>
+    </div>
+</body>
+</html>
